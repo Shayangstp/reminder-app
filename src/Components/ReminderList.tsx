@@ -8,9 +8,9 @@ interface ReminderListProps {
 
 const ReminderList = ({ items, onRemoveReminder }: ReminderListProps) => {
   return (
-    <ul className="list-group">
+    <ul className="list-group ">
       {items.map((item) => (
-        <li className="list-group-item" key={item.id}>
+        <li className="list-group-item text-center" key={item.id}>
           {item.title}
           <button
             onClick={() => onRemoveReminder(item.id)}

@@ -18,16 +18,16 @@ const AddRminders = ({ onAddReminder }: addReminderProps): JSX.Element => {
     <form onSubmit={submitForm}>
       <label htmlFor="title"></label>
       <input
-        className="form-control"
+        className="form-control text-center "
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         type="text"
         id="title"
-        placeholder="title of your todos"
+        placeholder="Add Reminder"
       />
       <button
         className="btn btn-primary rounded pill my-3 justify-conten-center"
-        style={{ marginLeft: "45%" }}
+        style={{ marginLeft: "44%" }}
       >
         Add your Reminder
       </button>
